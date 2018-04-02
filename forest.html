@@ -1,0 +1,54 @@
+     
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CYOA NAME</title>
+<style>
+body, html {
+    height: 100%;
+    
+}
+body{ 
+    background-image: url("https://cdn.vectorstock.com/i/1000x1000/99/40/cartoon-forest-background-vector-1989940.jpg");
+    /* Full height */
+    height: 100%;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+<script src='main.js'></script>
+  </head>
+  <body>
+    <h1>Forest </h1>
+    <p> Wow, those are beautiful trees.</p>
+    <p>  These mushrooms shall work, they'll never no the diffrence...</p>
+    <p>  These logs might help me later...</p>
+    <a href='Swamp.html'>Enter the Swamp</a>
+<img src="mushrooms.png" alt="bad mushrooms" style="position:fixed; right:165px; bottom:15px; " width="135" height="75">
+
+    <a href='#'onclick='log();'> <img src="http://laoblogger.com/images/block-of-wood-clipart-5.jpg" alt="logs" style="position:fixed; right:730px; bottom:15px; z-index: -1; " width="200" height="65">
+
+    </a>
+ <script>
+
+var currentScore = parseInt(getUrlParams("score"));
+ 
+
+function log() {
+  currentScore = currentScore + 1;
+  console.log(currentScore);
+  window.location = "swamp.html?score=" + currentScore;
+}
+
+
+
+</script>
+</body>
+</html>                                 
+
+                                                                                                                
